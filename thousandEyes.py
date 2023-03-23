@@ -111,29 +111,3 @@ def compareEnabledTestsToOfflineEnabledAgents(enabledTests, offlineAgents):
 
 
 
-# testList = getTestList(BASE_URL, USER, TOKEN)
-# enabledTests = getEnabledTests(testList)
-
-# agentList = getAgentList(BASE_URL, USER, TOKEN)
-# enabledAgents, enabledAgentIds ,offlineEnabledAgents, offlineEnabledAgentIds = getEnabledAgents(agentList)
-# # agentDetailList = agentDetails(enabledAgentIds)
-# offLineAgentDetails = agentDetails(offlineEnabledAgentIds)
-
-
-# enabledAgentsNumber = len(enabledAgents)
-# offlineEnabledAgentsNumber = len(offlineEnabledAgents)
-
-
-
-# enabledTestsAffectedByOfflineAgent = compareEnabledTestsToOfflineEnabledAgents(enabledTests, offLineAgentDetails)
-# print('enabled agents: ' + str(enabledAgentsNumber) + ' tests lists: ' + str(len(enabledTests)) +  ', offline agents: ' + str(offlineEnabledAgentsNumber) + ', affect tests: ' + str(enabledTestsAffectedByOfflineAgent))
-
-# USER = 'rymaclen@cisco.com'
-# TOKEN = 'jmi1999rta80m7oivfly47b4jvnf45go'
-
-
-# getScheduledTests(BASE_URL, USER, TOKEN)
-# getAutomatedTests(BASE_URL, USER, TOKEN)
-# endpoints = getEndpointAgents(BASE_URL, USER, TOKEN)
-# enabledEndpoints = getEnabledEndpointAgents(endpoints)
-# print(enabledEndpoints)
