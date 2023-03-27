@@ -1,9 +1,9 @@
+import os, datetime, sys
 from flask import Flask, flash, redirect, render_template, request, session, abort, jsonify
 import base64
 import requests, json
 from schemas import DashboardTileDataSchema, DashboardTileSchema
 from utils import get_json, get_jwt, jsonify_data
-import os, datetime, sys
 from crayons import *
 from thousandEyes import *
 from tileTypes import *
