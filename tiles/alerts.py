@@ -42,7 +42,7 @@ def alerts(alerts):
                     },
                     {
                         "key": "test_name",
-                        "label": "Status",
+                        "label": "Test Name",
                         "content_type": "icon_and_text"
                     },
                     {
