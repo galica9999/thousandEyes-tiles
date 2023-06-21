@@ -109,5 +109,9 @@ def compareEnabledTestsToOfflineEnabledAgents(enabledTests, offlineAgents):
             affectedTest.add(i['testName'])
     return affectedTest
 
-
+def getAlerts(url, user, token):
+    endpointAlerts = 'alerts.json'
+    endpoint = url + endpointAlerts
+    response = requests.get(endpoint, auth=(user, token))
+    return response.json()
 

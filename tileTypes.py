@@ -48,6 +48,17 @@ tileTypes = [
                 "description": "A longer description",
                 "tags": ["test"],
             },
+            {
+                "id": "alerts",
+                "type": "data_table",
+                "periods": [
+                    'last_hour',
+                ],
+                "title": "Active Alerts",
+                "short_description": "Active Alerts in ThousandEyes",
+                "description": '',
+                'tags':['alerts', 'overview']
+            },
             # {
             #     "description": "Tests Down Markdown",
             #     "periods": [

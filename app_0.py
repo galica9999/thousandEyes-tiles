@@ -13,6 +13,7 @@ from impactedTests import impactedTests
 from agentTestStats import agentTestStats
 from worldTile import worldTileList
 from endpointScheduledTest import endpointScheduledTests
+from alerts.py import alerts
 
 app = Flask(__name__)
 
@@ -93,6 +94,10 @@ def tile_data():
     if data["tile_id"] == "tests-down":
         return jsonify_data(
             agentTestStats(enabledAgentIds, enabledTests, offlineEnabledAgentIds, enabledTestsAffectedByOfflineAgent)
+        )
+    if data["tile_id"] == "alerts":
+        return jsonify_data(
+            alerts(getAlerts(BASE_URL, USER, TOKEN))
         )
     else:
         return jsonify_data(
