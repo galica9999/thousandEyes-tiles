@@ -16,6 +16,13 @@
       "type": "password",
       "label": "API Key",
       "required": true
+    },
+    {
+      "key": "token",
+      "type": "string",
+      "label": "group",
+      "tooltip": "enter the group you want to pull data from",
+      "required": true
     }
   ],
   "capabilities": [
