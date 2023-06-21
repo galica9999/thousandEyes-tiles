@@ -12,7 +12,7 @@ def alerts(alerts):
               'MAJOR':'High',
               'CRITICAL':'Critical'
               }
-    for alert in alerts:
+    for alert in alerts['alert']:
         tableRows.append(
                     {
                         'alert_name': alert['ruleName'],
