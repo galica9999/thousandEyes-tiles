@@ -51,7 +51,7 @@ def tiles():
     
 @app.route("/tiles/tile-data", methods=["POST"])
 def tile_data():
-    USER, TOKEN, GROUP = base64.b64decode(request.headers['Authorization'][6:]).decode('utf-8').split(':')
+    USER, TOKEN= base64.b64decode(request.headers['Authorization'][6:]).decode('utf-8').split(':')
     if not TOKEN:
         print(TOKEN)
         return
