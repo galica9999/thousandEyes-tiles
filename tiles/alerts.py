@@ -41,7 +41,7 @@ def alerts(alerts):
                         "content_type": "linked_text"
                     },
                     {
-                        "key": "status",
+                        "key": "test_name",
                         "label": "Status",
                         "content_type": "icon_and_text"
                     },
