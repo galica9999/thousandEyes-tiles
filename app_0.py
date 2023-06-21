@@ -13,7 +13,7 @@ from impactedTests import impactedTests
 from agentTestStats import agentTestStats
 from worldTile import worldTileList
 from endpointScheduledTest import endpointScheduledTests
-from alerts.py import alerts
+from alerts import alerts
 
 app = Flask(__name__)
 
